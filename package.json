@@ -7,9 +7,9 @@
   "devDependencies": {
     "react-scripts": "^1.1.5"
   },
-  "name": "ljg0t8",
-  "description": null,
-  "version": "0.0.0",
+  "name": "tic-tac-toe",
+  "description": "Welcome to our Tic-Tac-Toe website built with React! Experience the classic game of strategy and competition brought to life in an interactive and engaging web application. Play against a friend as you take turns placing X's and O's on the grid.",
+  "version": "1.0.0",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
