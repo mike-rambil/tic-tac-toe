@@ -1,26 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Square({ value }) {
-  return <button className="square">{value}</button>;
+  // eslint-disable-next-line
+  const [count, setValue] = useState(value);
+
+  function handleClick() {
+    setValue("X");
+  }
+
+  return (
+    <button className="square" onClick={handleClick}>
+      {count}
+    </button>
+  );
 }
 
 export default function Board() {
   return (
     <React.Fragment>
       <div className="board-row">
-        <Square value="1" />
-        <Square value="2" />
-        <Square value="3" />
+        <Square value={null} />
+        <Square value={null} />
+        <Square value={null} />
       </div>
       <div className="board-row">
-        <Square value="4" />
-        <Square value="5" />
-        <Square value="6" />
+        <Square value={null} />
+        <Square value={null} />
+        <Square value={null} />
       </div>
       <div className="board-row">
-        <Square value="7" />
-        <Square value="8" />
-        <Square value="9" />
+        <Square value={null} />
+        <Square value={null} />
+        <Square value={null} />
       </div>
     </React.Fragment>
   );
